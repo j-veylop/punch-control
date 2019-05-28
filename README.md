@@ -12,6 +12,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 
 * dateutils
 * arp-scan
+* python3
 	
 ## To-do list
 
