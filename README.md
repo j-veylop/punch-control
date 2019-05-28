@@ -10,8 +10,8 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 
 ## Dependencies
 
-	* dateutils
-	* arp-scan
+* dateutils
+* arp-scan
 	
 ## To-do list
 
