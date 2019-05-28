@@ -10,15 +10,14 @@ os.mkdir(".punch-control")
 employees = input("Enter a list of employees separated by spaces: ")
 list = employees.split()
 
-# Next we need the MAC addresses used to identify each employee
-MACS = input("Enter the MAC addresses in order separated by spaces: ")
-list = MACS.split()
-
 # With this loop we generate the folders for each employee
 for i in list:
     os.mkdir(".punch-control/"+i)
 
+# Next we need the MAC addresses used to identify each employee
+macs = input("Enter the MAC addresses in order separated by spaces: ")
+list = macs.split()
 
-print(MACS)
+print(macs)
 
 # Next we create the scripts we 
