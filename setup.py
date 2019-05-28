@@ -15,9 +15,14 @@ for i in list:
     os.mkdir(".punch-control/"+i)
 
 # Next we need the MAC addresses used to identify each employee
-macs = input("Enter the MAC addresses in order separated by spaces: ")
-list = macs.split()
+#MACS = input("Enter the MAC addresses in order separated by spaces: ")
+#list = MACS.split()
+MACS = []
+# Alternative method
+for i in list:
+    print("Enter the MAC address for " +i)
+    MACS = MACS.append(i)
 
-print(macs)
+print(MACS)
 
 # Next we create the scripts we 
