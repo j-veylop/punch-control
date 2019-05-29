@@ -1,15 +1,18 @@
 import os
 
-# We create a folder to save the scripts in.
-#os.mkdir(".scripts")
-
-# And another one to keep logs and tables.
-#os.mkdir(".punch-control")
-
 # Define variables.
 employees = []
 mac_address = []
 name = ""
+
+# We create a folder to save the scripts in.
+#os.mkdir(".scripts")
+
+# And another one to keep logs
+#os.mkdir(".logs")
+
+# And last one for the finished tables
+#os.mkdir("tables")
 
 # Get number of employees.
 num_employees = int(input("Enter number of employees: "))
@@ -23,9 +26,12 @@ for i in range(0, num_employees):
 
 # Get MACs of employees. 
 for i in range(0, num_employees):
-    mac = input("Enter mac address for " +employees[i] +" " )
+    mac = input("Enter MAC address for " +employees[i] +" " )
     mac_address.append(mac)
 print(employees)
 print(mac_address)
 
 # Generate the script files
+#for i in range(0, num_employees)
+#    os.makedirs(.scripts/employees[i]/)
+#    script1.write 
