@@ -22,7 +22,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 1. \*/1 * * * * *(every minute, any hour, any day of the month, any month, any day of the week)*
 2. 0 22 * * * *(at 0 minutes, the 22nd hour, any day of the month, any month, any day of the week)*
 3. 0 4 1 * * *(at 0 minutes, the 4th hour, the first day of the month, any month, any day of the week)*
-4. 0 3 1 1 * *(at 0 minutes, the 3rd hour, the first day of the month, the first month, any day of the year)*
+4. 0 3 1 1 * *(at 0 minutes, the 3rd hour, the first day of the month, the first month, any day of the week)*
 
 ## Dependencies
 
