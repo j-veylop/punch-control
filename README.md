@@ -17,6 +17,13 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 3. Run `new_month_$user.sh` the first day of every month to create the `.csv` file where we will store the data in a readily readable format.
 4. Run `new_year_$user.sh` the first day of every year to create the directories we will work in.
 
+Our default crontab is, respectively
+
+1. \*/1 * * * *
+2. 0 22 * * *
+3. 0 4 1 * *
+4. 0 3 1 1 *
+
 ## Dependencies
 
 * dateutils
