@@ -18,7 +18,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 
 - [x] Basic functionality
 - [ ] Split shift support
-- [ ] Python automatic installer
+- [ ] Python automatic installer (In progress)
 - [ ] Backup scheduler
 - [ ] Fancy viewer
  
