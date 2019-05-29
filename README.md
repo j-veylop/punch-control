@@ -4,7 +4,7 @@
 
 Punch Control is a simple work hours tracker. It is designed for Raspbian on a Raspberry Pi with wireless connection.
 
-## Why are you doing this?
+## Why are you doing this
 
 The main reason is to learn some programming and git along some courses. As a secondary reason, the law changed recently in my home country so every worker must have their work hours tracked by their company, so this project aims to effortlessly comply without a big investment.
 
