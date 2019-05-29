@@ -1,28 +1,31 @@
 import os
 
-# We create a folder to save the scripts in
-os.mkdir(".scripts")
+# We create a folder to save the scripts in.
+#os.mkdir(".scripts")
 
-# And another one to keep logs and tables
-os.mkdir(".punch-control")
+# And another one to keep logs and tables.
+#os.mkdir(".punch-control")
 
-# Now we need the list of employees to track
-employees = input("Enter a list of employees separated by spaces: ")
-list = employees.split()
+# Define variables.
+employees = []
+mac_address = []
+name = ""
 
-# With this loop we generate the folders for each employee
-for i in list:
-    os.mkdir(".punch-control/"+i)
+# Get number of employees.
+num_employees = int(input("Enter number of employees: "))
 
-# Next we need the MAC addresses used to identify each employee
-#MACS = input("Enter the MAC addresses in order separated by spaces: ")
-#list = MACS.split()
-MACS = []
-# Alternative method
-for i in list:
-    print("Enter the MAC address for " +i)
-    MACS = MACS.append(i)
+print("Introduce the names of the employees")
 
-print(MACS)
+# Get names of employees. We will later associate them with each MAC address.
+for i in range(0, num_employees):
+    name = input("")
+    employees.append(name)
 
-# Next we create the scripts we 
+# Get MACs of employees. 
+for i in range(0, num_employees):
+    mac = input("Enter mac address for " +employees[i] +" " )
+    mac_address.append(mac)
+print(employees)
+print(mac_address)
+
+
