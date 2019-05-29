@@ -17,7 +17,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 3. Run `new_month_$user.sh` the first day of every month to create the `.csv` file where we will store the data in a readily readable format.
 4. Run `new_year_$user.sh` the first day of every year to create the directories we will work in.
 
-### Our default crontab is, respectively
+#### Our default crontab is, respectively
 
 1. \*/1 * * * * *(every minute, any hour, any day of the month, any month, any day of the week)*
 2. 0 22 * * * *(at 0 minutes, the 22nd hour, any day of the month, any month, any day of the week)*
@@ -30,6 +30,10 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 * arp-scan
 * python3
 	
+## Why are you so verbose with docmuentation, comments and commits?
+
+As I said, this is a learning process for me. The more verbose I am the easier it is for me to keep track of whatever the hell I'm doing at any time.
+
 ## To-do list
 
 - [x] Basic functionality
