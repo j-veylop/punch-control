@@ -4,6 +4,10 @@
 
 Punch Control is a simple work hours tracker. It is designed for Raspbian on a Raspberry Pi with wireless connection.
 
+## Why are you doing this?
+
+The main reason is to learn some programming and git along some courses. As a secondary reason, the law changed recently in my home country so every worker must have their work hours tracked by their company, so this project aims to effortlessly comply without a big investment.
+
 ## How does it work
 
 Punch Control uses `arp-scan` to find devices connected to your wifi network, and associates their MAC addresses to the employees. It logs connected devices every minute and inserts the check-in and check-out times into a `.csv` file at the end of every day. The workflow is something along these lines:
