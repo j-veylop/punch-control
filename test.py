@@ -10,7 +10,7 @@ employees = []
 name = ""
 num_employees = int(input("Enter number of employees: "))
 
-for i in range(0, num_employees -1):
-    name = str(input())
+for i in range(0, num_employees):
+    name = input("Enter name of employees one by one and press enter ")
     employees.append(name)
 print(employees)
