@@ -42,3 +42,7 @@ As I said, this is a learning process for me. The more verbose I am the easier i
 - [ ] Backup scheduler
 - [ ] Fancy viewer
 - [x] Make repo publishable 
+
+## License
+
+This software is licensed under the GNU AGPL v3.0
