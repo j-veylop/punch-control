@@ -45,4 +45,4 @@ As I said, this is a learning process for me. The more verbose I am the easier i
 
 ## License
 
-This software is licensed under the GNU AGPL v3.0
+This software is licensed under the [GNU AGPL v3.0](https://www.gnu.org/licenses/agpl-3.0.html)
