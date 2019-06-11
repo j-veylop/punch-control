@@ -74,7 +74,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 	
 ## Why are you so verbose with documentation, comments and commits?
 
-As I said, this is a learning process for me. The more verbose I am the easier it is for me to keep track of whatever the hell I'm doing at any time.
+As I said, this is a learning process for me. The wordier I am the easier it is for me to keep track of whatever the hell I'm doing at any time.
 
 ## To-do list
 
