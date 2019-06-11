@@ -37,10 +37,13 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 3. 0 4 1 * 1-5 *(at 0 minutes, the 4th hour, the first day of the month, any month, any day of the week)*
 
 4. 0 3 1 1 * *(at 0 minutes, the 3rd hour, the first day of the month, the first month, any day of the week)*
-#### For split shift, we are going to need
+#### For split shift, allowing half an hour margin in a 9-15.30 and 16.30-19.30 we are going to need
 
-1. 
+1. 30-59 8 * * 1-5 *(every minute from 30 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
+	\*/1 9-14 * * 1-5 *(every minute, every hour from 9 to 14, any day of the month, any month, every day of the week from Monday through Friday)*
+
+	0-50 15 * * 1-5 *(every minute from 0 through 50, the 15th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 ## Dependencies
 
 * dateutils
@@ -54,7 +57,7 @@ As I said, this is a learning process for me. The more verbose I am the easier i
 ## To-do list
 
 - [x] Basic functionality
-- [ ] Split shift support
+- [ ] Split shift support (In progress)
 - [ ] Python automatic installer (In progress)
 - [ ] Backup scheduler
 - [ ] Fancy viewer
