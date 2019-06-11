@@ -54,7 +54,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 </details>
 
 
-<details><summary><b>For split shift, allowing half an hour margin in a 9-15.30 and 16.30-19.30 we are going to need</b></summary>
+<details><summary><b>For split shift, allowing a fifteen minutes margin in a 9-15.30 and 16.30-19.30, we are going to need</b></summary>
 
 1. 30-59 8 * * 1-5 *(every minute from 30 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
@@ -72,7 +72,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 * arp-scan
 * python3
 	
-## Why are you so verbose with docmuentation, comments and commits?
+## Why are you so verbose with documentation, comments and commits?
 
 As I said, this is a learning process for me. The more verbose I am the easier it is for me to keep track of whatever the hell I'm doing at any time.
 
