@@ -18,19 +18,24 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 4. Run `new_year_$user.sh` the first day of every year to create the directories we will work in.
 
 ## Crontabs
-<details><summary><h4> Our default crontab is, respectively</h4></summary>
+<details><summary>**Our default crontab is, respectively**</summary>
 <p>
 
-
 1. \*/1 * * * * *(every minute, any hour, any day of the month, any month, any day of the week)*
+
 2. 0 22 * * * *(at 0 minutes, the 22nd hour, any day of the month, any month, any day of the week)*
+
 3. 0 4 1 * * *(at 0 minutes, the 4th hour, the first day of the month, any month, any day of the week)*
+
 4. 0 3 1 1 * *(at 0 minutes, the 3rd hour, the first day of the month, the first month, any day of the week)*
+
 </p>
 </details>
 
 
-#### For a standard 9-5 timetable, if we allow for half an hour margin, we are going to need
+<details><summary>**For a standard 9-5 timetable, if we allow for half an hour margin, we are going to need**</summary>
+
+<p>
 
 1. 30-59 8 * * 1-5 *(every minute from 30 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
@@ -43,13 +48,24 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 3. 0 4 1 * 1-5 *(at 0 minutes, the 4th hour, the first day of the month, any month, any day of the week)*
 
 4. 0 3 1 1 * *(at 0 minutes, the 3rd hour, the first day of the month, the first month, any day of the week)*
-#### For split shift, allowing half an hour margin in a 9-15.30 and 16.30-19.30 we are going to need
+
+</p>
+
+</details>
+
+
+<details><summary>**For split shift, allowing half an hour margin in a 9-15.30 and 16.30-19.30 we are going to need**</summary>
 
 1. 30-59 8 * * 1-5 *(every minute from 30 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
 	\*/1 9-14 * * 1-5 *(every minute, every hour from 9 to 14, any day of the month, any month, every day of the week from Monday through Friday)*
 
 	0-50 15 * * 1-5 *(every minute from 0 through 50, the 15th hour, any day of the month, any month, every day of the week from Monday through Friday)*
+
+</p>
+
+</details>
+
 ## Dependencies
 
 * dateutils
