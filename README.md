@@ -18,7 +18,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 4. Run `new_year_$user.sh` the first day of every year to create the directories we will work in.
 
 ## Crontabs
-<details><summary>**Our default crontab is, respectively**</summary>
+<details><summary><b>Our default crontab is, respectively</b></summary>
 <p>
 
 1. \*/1 * * * * *(every minute, any hour, any day of the month, any month, any day of the week)*
@@ -33,7 +33,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 </details>
 
 
-<details><summary>**For a standard 9-5 timetable, if we allow for half an hour margin, we are going to need**</summary>
+<details><summary><b>For a standard 9-5 timetable, if we allow for half an hour margin, we are going to need</b></summary>
 
 <p>
 
@@ -54,7 +54,7 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 </details>
 
 
-<details><summary>**For split shift, allowing half an hour margin in a 9-15.30 and 16.30-19.30 we are going to need**</summary>
+<details><summary><b>For split shift, allowing half an hour margin in a 9-15.30 and 16.30-19.30 we are going to need</b></summary>
 
 1. 30-59 8 * * 1-5 *(every minute from 30 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
