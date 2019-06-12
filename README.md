@@ -1,14 +1,14 @@
 # Punch Control
 
-## What is this
+## What is this?
 
 Punch Control is a simple work hours tracker. It is designed for Raspbian on a Raspberry Pi with wireless connection.
 
-## Why are you doing this
+## Why are you doing this?
 
 The main reason is to learn some programming and git along some courses. As a secondary reason, the law changed recently in my home country so every worker must have their work hours tracked by their company, so this project aims to effortlessly comply without a big investment.
 
-## How does it work
+## How does it work?
 
 Punch Control uses `arp-scan` to find devices connected to your wifi network, and associates their MAC addresses to the employees. It logs connected devices every minute and inserts the check-in and check-out times into a `.csv` file at the end of every day. The workflow is something along these lines:
 
@@ -54,13 +54,29 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 </details>
 
 
-<details><summary><b>For split shift, allowing a fifteen minutes margin in a 9-15.30 and 16.30-19.30, we are going to need</b></summary>
+<details><summary><b>For split shift, allowing a fifteen minutes margin in a 9-15.30 and 16.30-19, we are going to need</b></summary>
 
-1. 45-59 8 * * 1-5 *(every minute from 45 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
+1. **Morning time**
 
-	\*/1 9-14 * * 1-5 *(every minute, every hour from 9 to 14, any day of the month, any month, every day of the week from Monday through Friday)*
+45-59 8 * * 1-5 *(every minute from 45 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
-	0-45 15 * * 1-5 *(every minute from 0 through 45, the 15th hour, any day of the month, any month, every day of the week from Monday through Friday)*
+\*/1 9-14 * * 1-5 *(every minute, every hour from 9 to 14, any day of the month, any month, every day of the week from Monday through Friday)*
+
+0-45 15 * * 1-5 *(every minute from 0 through 45, the 15th hour, any day of the month, any month, every day of the week from Monday through Friday)*
+
+2. **Afternoon time**
+
+15-59 16 * * 1-5 *(every minute from 15 through 59, the 16th hour, any day of the month, any month, every day of the week from monday through Friday)*
+
+\*/1 17-18 * * 1-5 *(every minute, every hour from 17 to 18, any day of the month, any month, every day of the week from Monday to Friday)*
+
+0-15 19 * * 1-5 *(every minute from 0 through 15, the 17th hour, any day of the month, any month, every day of the month from Monday to Friday)*
+
+3. 0 22 * * 1-5 *(at 0 minutes, the 22nd hour, any day of the month, any month, every day from Monday through Friday)*
+
+4. 0 4 1 * 1-5 *(at 0 minutes, the 4th hour, the first day of the month, any month, any day of the week form Monday through Friday)*
+
+5. 0 3 1 1 * *(at 0 minutes, the 3rd hour, the first day of the month, the first month, any day of the week)*
 
 </p>
 
