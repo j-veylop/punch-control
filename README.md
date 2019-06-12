@@ -56,11 +56,11 @@ Punch Control uses `arp-scan` to find devices connected to your wifi network, an
 
 <details><summary><b>For split shift, allowing a fifteen minutes margin in a 9-15.30 and 16.30-19.30, we are going to need</b></summary>
 
-1. 30-59 8 * * 1-5 *(every minute from 30 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
+1. 45-59 8 * * 1-5 *(every minute from 45 through 59, the 8th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
 	\*/1 9-14 * * 1-5 *(every minute, every hour from 9 to 14, any day of the month, any month, every day of the week from Monday through Friday)*
 
-	0-50 15 * * 1-5 *(every minute from 0 through 50, the 15th hour, any day of the month, any month, every day of the week from Monday through Friday)*
+	0-45 15 * * 1-5 *(every minute from 0 through 45, the 15th hour, any day of the month, any month, every day of the week from Monday through Friday)*
 
 </p>
 
