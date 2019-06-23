@@ -4,6 +4,7 @@ import os
 employees = []
 mac_address = []
 name = ""
+dictionary = {}
 
 # We create a folder to save the scripts in.
 #os.mkdir(".scripts")
@@ -28,8 +29,12 @@ for i in range(0, num_employees):
 for i in range(0, num_employees):
     mac = input("Enter MAC address for " +employees[i] +" " )
     mac_address.append(mac)
-print(employees)
-print(mac_address)
+#print(employees)
+#print(mac_address)
+
+zipobj = zip(employees, mac_address)
+mac_emp = dict(zipobj) 
+print(mac_emp)
 
 # Generate the script files
 #for i in range(0, num_employees)
